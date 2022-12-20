@@ -47,7 +47,7 @@ Don't forget about pagination.
 "title": "Iphone 13",
 "description": "...",
 "price": 1000,
-"is_active": True,
+"is_active": true,
 "created_at": "",
 "updated_at": "",
 "author": {
@@ -59,7 +59,7 @@ Don't forget about pagination.
 "title": "Iphone 12",
 "description": "...",
 "price": 800,
-"is_active": True,
+"is_active": true,
 "created_at": "",
 "updated_at": "",
 "author": {
