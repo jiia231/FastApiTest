@@ -1,6 +1,6 @@
-from .crud_user import user
-from .crud_post import post
 from .crud_comment import comment
+from .crud_post import post
+from .crud_user import user
 
 # For a new basic set of CRUD operations you could just do
 

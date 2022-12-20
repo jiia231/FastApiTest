@@ -1,7 +1,7 @@
 from datetime import timedelta
 from typing import Any
 
-from fastapi import APIRouter, Body, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 
@@ -9,8 +9,6 @@ from app import crud, models, schemas
 from app.api import deps
 from app.core import security
 from app.core.config import settings
-from app.core.security import get_password_hash
-
 
 router = APIRouter()
 
@@ -46,4 +44,3 @@ def test_token(current_user: models.User = Depends(deps.get_current_user)) -> An
     Test access token
     """
     return current_user
-
