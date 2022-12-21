@@ -16,7 +16,8 @@ class PostCreate(PostBase):
 
 # Properties to receive via API on update
 class PostUpdate(PostBase):
-    pass
+    title: Optional[str]
+    content: Optional[str]
 
 
 class PostInDBBase(PostBase):

@@ -18,7 +18,9 @@ class CommentCreate(CommentBase):
 
 # Properties to receive via API on update
 class CommentUpdate(CommentBase):
-    pass
+    user_id: Optional[int]
+    post_id: Optional[int]
+    content: Optional[str]
 
 
 class CommentInDBBase(CommentBase):
